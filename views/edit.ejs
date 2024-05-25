@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="w-full h-screen bg-black font-sans text-white relative">
+      <h1 class="text-center">Update Users</h1>
+      <div
+        class="form w-1/2 h-[40vw] absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] flex justify-center items-center shadow-md shadow-sky-300"
+      >
+        <form
+          action="/update/<%=user.id%>"
+          method="post"
+          class="h-1/2 w-1/2 p-2"
+        >
+          <input
+            class="block text-zinc-400 p-4 mb-3 w-full bg-sky-900 text-xl"
+            type="text"
+            placeholder="Your name.."
+            name="name"
+            value="<%=user.name%>"
+          />
+          <input
+            class="block text-zinc-400 p-4 mb-3 w-full bg-sky-900 text-xl"
+            type="text"
+            placeholder="Your email.."
+            value="<%=user.email%>"
+          />
+          <input
+            class="block text-zinc-400 p-4 mb-3 w-full bg-sky-900 text-xl"
+            type="text"
+            placeholder="Your ImgUrl.."
+            name="img"
+            value="<%=user.img%>"
+          />
+          <input
+            class="p-3 bg-yellow-500 text-black rounded-lg hover:cursor-pointer"
+            type="submit"
+            value="Update User"
+          />
+        </form>
+      </div>
+    </div>
+
+    <script src="/javascripts/script.js"></script>
+  </body>
+</html>

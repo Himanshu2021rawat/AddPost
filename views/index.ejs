@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="w-full h-screen bg-black font-sans text-white relative">
+      <h1 class="text-4xl text-center underline underline-offset-4">
+        Create New User...
+      </h1>
+
+      <div
+        class="form w-1/2 h-[40vw] absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] flex justify-center items-center shadow-md shadow-sky-300"
+      >
+        <form action="/create" method="post" class="h-1/2 w-1/2 p-2">
+          <input
+            class="block p-4 mb-3 w-full bg-sky-900 text-xl"
+            type="text"
+            placeholder="Your name.."
+            name="name"
+          />
+          <input
+            class="block p-4 mb-3 w-full bg-sky-900 text-xl"
+            type="text"
+            placeholder="Your email.."
+            name="email"
+          />
+          <input
+            class="block p-4 mb-3 w-full bg-sky-900 text-xl"
+            type="text"
+            placeholder="Your ImgUrl.."
+            name="img"
+          />
+          <input
+            class="p-3 bg-sky-600 rounded-lg hover:cursor-pointer hover:bg-sky-400"
+            type="submit"
+            value="Create User"
+          />
+          <a href="/read" class="p-3 bg-sky-600 rounded-lg ml-10"
+            >See All Post</a
+          >
+        </form>
+      </div>
+    </div>
+
+    <script src="/javascripts/script.js"></script>
+  </body>
+</html>
